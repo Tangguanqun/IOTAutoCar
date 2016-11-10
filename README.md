@@ -21,7 +21,7 @@ How to deploy a Node.js program to Bluemix
   
   ① Open “index.html” under the public folder. Change the URL name.  
   
-  ②Open the “manifest.yml” and change the name and host. The host name is same as your app name but be attention the first letter of the      host name must be lowercase. 
+  ②Open the “manifest.yml” and change the name and host. The host name is same as your app name.
 
 10.	 Run some commands as the guide shown in the “Getting Started” page. No need to download the demo code in step 1. Just start from the  step 2.
 
