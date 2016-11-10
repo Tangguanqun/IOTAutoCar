@@ -1,14 +1,35 @@
-# Node.js Starter Overview
+How to deploy a Node.js program to Bluemix
+==========================================
 
-The Node.js Starter demonstrates a simple, reusable Node.js web application based on the Express framework.
+1.	First of all, you should have a Bluemix account. 
 
-## Run the app locally
+2.	Login your account and create a workspace.  Click the button upper right to scan your profile. Make sure you are in the US South Region.
 
-1. [Install Node.js][]
-2. Download and extract the starter code from the Bluemix UI
-3. cd into the app directory
-4. Run `npm install` to install the app's dependencies
-5. Run `npm start` to start the app
-6. Access the running app in a browser at http://localhost:6001
+3.	Click the “Create Application” button. 
 
-[Install Node.js]: https://nodejs.org/en/download/
+4.	Select “Cloud Foundry App” in the left sidebar.  Click “SDK for Node.js”.
+
+5.	Give a unique name for your app. Your app name will generate the host name automatically. 
+
+6.  Click “Create” button lower right. The page jump to the “getting Started”. 
+
+7.	Click the buttons to download and install both the Bluemix Command Line and the CF Command Line.
+
+8.	Download our demo code on Git. 
+https://github.com/CognitiveBuild/Thoth/raw/master/DriveCar.zip
+
+9.	Extract the zip package and change the host name to yours.
+  
+  ① Open “index.html” under the public folder. Change the URL name.  
+  
+  ②Open the “manifest.yml” and change the name and host. The host name is same as your app name but be attention the first letter of the host name must be lowercase. 
+
+10.	 Run some commands as the guide shown in the “Getting Started” page. No need to download the demo code in step 1. Just start from the step 2.
+
+  ① cd your_new_directory(change directory to the git code which download in step 8).  
+  
+  ② cf api https://api.ng.bluemix.net  
+  
+  ③ cf login(login with your bluemix account and switch the workspace)  
+  
+  ④ cf push
