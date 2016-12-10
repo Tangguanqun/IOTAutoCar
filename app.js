@@ -32,7 +32,7 @@ io.on("connection",function(socket){
 		}
 		else{
 			console.log("Not a direction order");
-		}	
+	io.sockets.emit("message", key);	
 	});
 			
 });
